@@ -2,7 +2,7 @@
 title: Think Different
 subtitle: 「Stay hungry. Stay foolish.」
 welcome_message: <a href="https://github.com/LensXiong" target="_blank">Github</a>
-description: 嗨，我是王雄 (@Outlier)，一名职业的PHP / JavaScript 开发者。现居北京，专注金融领域。正在修行，探求工匠精神。
+description: 嗨，我是王雄 (@Outlier)，一名职业PHP开发者，业余JavaScript爱好者。现居北京，专注金融。正在修行，探索编程之美。我深信，所有的非常，都源于不懈的日常。
 creator: <a href="http://wwxiong.com">@Outlier</a>
 
 url: "http://wwxiong.com"
@@ -13,7 +13,7 @@ permalink: /:year/:month/:title/
 highlighter: plain
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: slate
+cover_color:
 
 # The blog button should not be removed.
 blog_button:
@@ -22,7 +22,9 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://wwxiong.com'}
+    - {title: 项目, description: 我的项目, url: 'https://github.com/LensXiong/'}
+    - {title: 关于, description: 其他博客, url: 'http://wwxiong.com/'}
+    - {title: Vultr, description: 其他博客, url: 'http://www.vultr.com/?ref=6959672'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
