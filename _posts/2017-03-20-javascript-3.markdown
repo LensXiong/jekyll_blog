@@ -3,8 +3,6 @@ layout: post
 title: JavaScript基础-3
 date: 2017-03-20 19:32:24.000000000 +09:00
 ---
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=406000649&auto=1&height=66"></iframe>
 ## <span id="0">目录</span>
 >* [**作用域链**](#1)
 >* [作用域链作用](#1.1)
@@ -23,6 +21,8 @@ date: 2017-03-20 19:32:24.000000000 +09:00
 >* [函数执行](#3.5)
 >* [this关键字](#3.6)
 >* [函数对象](#3.7)
+
+<embed src="//music.163.com/style/swf/widget.swf?sid=406000649&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all"></embed>
 
 ## [<span id="1">作用域链</span>](#0)
 
