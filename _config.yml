@@ -1,8 +1,9 @@
 # Basic
 title: Think Different
 subtitle: 「Stay hungry. Stay foolish.」
-welcome_message: <a href="https://github.com/LensXiong" target="_blank">Github</a>
-description: 嗨，我是王雄 (@Outlier)，一名职业PHP开发者，业余JavaScript爱好者。现居北京，专注金融。正在修行，探索编程之美。我深信，所有的非常，都源于不懈的日常。
+welcome_message:  这里是我的技术博客，<a href="http://wwxiong.com">关于生活博客，也欢迎前往了解。</a>
+
+description: 嗨，我是王雄 (@Outlier)，一名职业PHP开发，业余JavaScript开发者。现居北京，专注金融。我深信，所有的非常，都源于不懈的日常。
 creator: <a href="http://wwxiong.com">@Outlier</a>
 
 url: "http://wwxiong.com"
@@ -42,7 +43,7 @@ social:
     weibo: Outlier
     github: LensXiong
     twitter: Outlier
-    gplus: 107108267983477358170
+    gplus: 110287885508431241314
     mail: lensxiong@gmail.com
 
 # Google Analytics
