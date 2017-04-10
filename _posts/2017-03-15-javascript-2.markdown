@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript-2
+title: Javascript基础-2
 date: 2017-03-15 15:32:24.000000000 +09:00
 ---
 
