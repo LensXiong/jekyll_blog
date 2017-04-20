@@ -17,6 +17,7 @@ date: 2017-04-19 09:32:24.000000000 +09:00
 >* [5.1 Cookie 创建](#5.1)
 >* [5.2 Cookie 获取](#5.2)
 >* [5.3 Cookie 删除](#5.3)
+>* [5.4 Cookie 操作详解](#5.4)
 >* [**6 Cookie 应用场景**](#6)
 >* [**7 Cookie 安全性问题**](#7)
 >* [**8 Cookie 安全防范措施**](#8)
@@ -105,15 +106,16 @@ Cookie 可以在服务器端创建，然后将 Cookie 信息附加在HTTP消息�
 保存 Cookie 文件是一个文本文件，因此不用担心此文件中的内容会被执行而破坏客户的机器。
 
 支持Web端开发的语言都有创建 Cookie 的方法或函数，以及设置  Cookie 属性和添加自定义属性的方法或函数，最终将 Cookie 附加到返回客户端的HTTP消息头中。
+
 在PHP语言中，可利用PHP的内置函数，[setCookie()](http://php.net/manual/zh/function.setcookie.php)完成。
 
-setCookie (变量名,变量值,过期时间,有效的服务器路径,有效域名/子域名)
+```
+setCookie (变量名,变量值,过期时间,有效的服务器路径,有效域名/子域名,是否通过 HTTPS 安全连接,是否通过 HTTP 协议访问)
+```
 
 例：创建名为 "user" 的 Cookie，并为它赋值 "Alan Outlier"，规定了此 cookie 在一小时后过期
 ```
-<?php
 setcookie("user", "Alan Outlier", time()+3600);
-?>
 ```
 > 注：在发送 Cookie 时，Cookie 的值会自动进行 URL 编码，在取回时进行自动解码。（为防止 URL 编码，使用 setrawcookie() 代替。）
 创建 Cookie 时如果不指定生存有效时间，则Cookie 只在浏览器关闭前有效，Cookie 会在服务器端和客户端传输，但是不会保存在客户机的磁盘上，打开新的浏览器将不能获得原先创建的 Cookie 信息。
@@ -132,23 +134,109 @@ Cookie除了可以在服务器端创建外，也可以在客户端的浏览器�
 ## [<span id="5.2">5.2 Cookie 获取</span>](#0)
 利用PHP的预定义超全局数组变量[ $_COOKIE ](http://php.net/manual/zh/reserved.variables.cookies.php)完成。每个元素就是一个浏览器请求时携带的 COOKIE 变量。下标为 COOKIE 变量名,值为 COOKIE 变量值。
 ```
-<?php
 if(isset($_COOKIE["user"]))
 echo"Welcome".$_COOKIE["user"]."!<br>";
 else
 echo"Welcomeguest!<br>";
-?>
 ```
 ## [<span id="5.3">5.3 Cookie 删除</span>](#0)
 利用有效期删除 COOKIE 变量。
 ```
-<?php
 setcookie("user","",time()-3600);
-?>
 ```
-
 > 第三个参数的默认值为0，表示浏览器关闭才失效。
 
+## [<span id="5.4">5.4 Cookie 操作详解</span>](#0)
+###  Cookie 变量名允许下标的形式
+通过利用 ```setcookie``` 的第一个参数进行标识名称中指定数组下标的形式设置。
+
+```
+setcookie("user[username]","wangxiong");
+setcookie("user[password]","*****");
+setcookie("user[email]","lensxiong@gmail.com");
+```
+在设置成功之后形成 ```$_COOKIE``` 数组元素时，PHP程序将其整理成一个数组结构，如果需要在PHP脚本中获取其值则需要使用 ```$_COOKIE``` 超全局数组。
+
+直接打印 ```$_COOKIE['user']``` 数组示例：
+```
+print_r($_COOKIE['user']); // Array ( [username] => wangxiong [password] => ***** [email] => lensxiong@gmil.com )
+```
+通过遍历 ```$_COOKIE['user']``` 数组示例：
+```
+foreach($_COOKIE["user"] as $key=>$value){
+    //输出cookie数组中的二维键值对
+    echo $key . ":" .$value,"\n";    // username:wangxiong password:***** email:lensxiong@gmil.com
+}
+```
+### COOKIE 变量的有效期
+通过利用 ```setcookie``` 的第三个参数进行设置。
+
+默认的有效期（第三个参数的值为0），表示浏览器关闭会话周期结束:
+```
+setcookie("user[username]","wangxiong", 0);
+```
+PHP 会在响应数据中，将 COOKIE 的失效时间告知给浏览器。
+浏览器去检测 COOKIE 变量的有效期，如果过期，就不会在请求时携带（在浏览器端删除该 COOKIE 变量）。
+当到达某个时间点时，此 COOKIE 变量会自动失效。
+
+通过```PHP_INT_MAX``` 设置 COOKIE 永久有效如下:
+```
+setcookie("user[username]","wangxiong", PHP_INT_MAX)
+```
+
+### COOKIE 变量的有效路径
+通过利用 ```setcookie``` 的第四个参数进行设置。
+
+设置变量的有效路径为站点根目录如下：
+```
+setcookie('name', 'wangxiong', 0 , '/');
+```
+设置成 ``` / ``` 时，Cookie 对整个域名 domain 有效。 如果设置成 ``` /foo/ ```， Cookie 仅仅对 domain 中 ```/foo/``` 目录及其子目录有效（比如 ```/foo/bar/ ```）。
+默认值是设置 Cookie 时的当前目录。
+
+### COOKIE 变量的有效域名
+通过利用 ```setcookie``` 的第五个参数进行设置。
+
+设置所有的 ```wangxiong.me``` 都有效示例如下：
+```
+setcookie('name', 'wangxiong', 0 , '/', 'wangxiong.me');
+```
+设置成子域名（例如 ```www.example.com）```，会使 Cookie 对这个子域名和它的三级域名有效（例如 ``` w2.www.example.com ```）。
+
+要让 Cookie 对整个域名有效（包括它的全部子域名），只要设置成域名就可以了（这个例子里是 ```example.com```）。
+
+## [<span id="6">6 Cookie 应用场景</span>](#0)
+
+### 实现Web中的用户认证
+
+HTTP协议一个很大的缺点就是不作用户身份的判断，这给编程人员带来很大的不便，而 Cookie 弥补了这个缺陷。大多数站点在进行用户身份认
+证时都采用 Cookie 机制，使用户在通过第一次身份认证以后，无需再多次输入其用户帐号、口令密码等，这样能省去用户登录的繁琐。
+
+### 定制个性化空间
+
+ Cookie 技术方便 Web 站点为不同用户订制信息，给用户提供个性化、更友好的浏览环境，并能更加准确地收集访问者的信息。例如，为用户
+ 提供改变网页内容、布局和颜色的权力，允许用户输入自己的信息，然后通过这些信息对网站的一些参数进行修改，以订制网页的外观。
+
+另外，由于费用、带宽限制等原因，用户访问一个站点时并不希望浏览网页所有的内容。利用 Cookie 技术根据个人喜好设定栏目，动态地产生
+用户所需要的内容，这样能够迎合不同层次用户的访问兴趣，减少用户项目选择的次数，更加合理地利用Web服务器的传输带宽。
+
+### 网站访问统计
+
+由于代理服务器、缓存等的使用，使得能帮助网站精确统计来访人数的方法只能是为每个访问者建立一个唯一的 ID 。使用 Cookie ，网站可以
+完成以下工作：测定多少人访问过；测定访问者中有多少是新用户、多少是老用户；测定一个用户多久访问一次网站。
+
+基本方法是：借助于后台数据库，在用户第一次访问该网站时，网站在数据库中建立一个新的ID，并把ID通过Cookie传送给用户。用户再次
+来访时，网站把该用户ID对应的计数器加1，得到用户的来访次数或判断用户是新用户还是老用户。
+
+### 维护在线电子商务客户信息
+
+在线订购商务中使用 Cookie 技术，可记载用户想购买的物品。用户往“购物车”里投放商品，网站便在数据库中用户的ID记录里记录下来。
+当用户“买单”时，网站通过 ID 检索数据库中用户的所有选择就知道“购物车”里的物品项目。 Cookie 能简化订购中的操作，使网上购物更接近现实生活。
+
+### 记录站点轨迹
+
+再次访问同一网站时 Cookie 具有被读回的特性。利用这一特性来实现很多的设计功能，如显示用户访问该网页的次数；
+显示用户上一次的访问时间；记录用户以前在本页中所做的选择等，这可以免去研究复杂的 CGI 编程。
 
 ## [<span id="11">11 参考文章 </span>](#0)
 
