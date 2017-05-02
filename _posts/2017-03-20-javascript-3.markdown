@@ -22,8 +22,6 @@ date: 2017-03-20 19:32:24.000000000 +09:00
 >* [this关键字](#3.6)
 >* [函数对象](#3.7)
 
-<embed src="//music.163.com/style/swf/widget.swf?sid=406000649&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all"></embed>
-
 ## [<span id="1">作用域链</span>](#0)
 
 在当前环境定义的变量，其在当前环境、内部环境、内部深层环境都可以使用。
