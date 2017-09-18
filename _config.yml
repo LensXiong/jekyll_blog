@@ -24,7 +24,7 @@ blog_button:
 nav:
     - {title: 项目, description: 我的项目, url: 'https://github.com/LensXiong/'}
     - {title: 关于, description: 其他博客, url: 'http://wwxiong.com/hexo_blog/'}
-    - {title: Vultr, description: 其他博客, url: 'http://www.vultr.com/?ref=6959672'}
+    - {title: 导航, description: 我的导航, url: 'http://wwxiong.com/navigation/index.html'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
