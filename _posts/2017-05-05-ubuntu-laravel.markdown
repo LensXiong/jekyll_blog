@@ -2,11 +2,8 @@ layout: post
 title:  Ubuntu上部署Laravel项目
 date:  2017-05-05 09:17:24.000000000 +09:00
 ---
-**
 摘要：如果你不亲自去编译安装lamp,你就无法知道这些分开之后的产品有什么特性。更多是你需要根据项目的需求去配置他们，nginx的配置文件、mysql的配置文件、PHP的配置文件，然后根据基本的配置，能不能再做优化，比如加缓存、加速的一些辅助工具。
-**
-<!-- more -->
-<The rest of contents | 余下全文>
+
 
 # 购买VPS服务器
 详情可点击[vultr官网](http://www.vultr.com/?ref=6959672)进行注册。具体教程这里不做讲解，如果有需要可参照[Vultr账号注册及购买使用教程](https://www.jiloc.com/41805.html)进行注册和购买。在选择服务器时最好选择Ubuntu 14.04 LTS版本。
