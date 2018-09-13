@@ -13,6 +13,7 @@ toc: true
 ---
 
 ## 1、laravel 概述
+```
 - [ ] laravel的基本特点
   - [x]  使用PHP新版本的最新特性增加了代码复用性 , 扩展性 . 目前要求PHP 5.5.9以上版本 , 并支持PHP7
   - [x]  项目基于PHP最先进的包管理工具composer构建
@@ -32,6 +33,8 @@ toc: true
   - [x] PHP最先进的包管理工具 托管PHP文件的autoload
   - [x] 直接引入第三方依赖
   - [x] 发布自己的依赖包
+  
+```
 
 ## 2、laravel 安装与配置
 
