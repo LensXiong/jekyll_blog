@@ -2,7 +2,7 @@
 title: Wangxiong's Tech
 subtitle: 「Stay hungry. Stay foolish.」
 description: 嗨，我是王雄 (@Outlier)，一名职业PHP开发者，业余JavaScript/Linux爱好者。现居北京，专注金融。我深信，所有的非常，都源于不懈的日常。
-welcome_message: 这里是我的<a href="/#blog">Jekyll博客</a>，关于<a href="http://wwxiong.com/hexo_blog/">Hexo博客</a>，也欢迎<a href="http://wwxiong.com/hexo_blog/">前往了解</a>。
+welcome_message: 这里是我的<a href="/#blog" class="blog-button">Jekyll博客</a>，关于<a href="http://wwxiong.com/hexo_blog/">Hexo博客</a>，也欢迎<a href="http://wwxiong.com/hexo_blog/">前往了解</a>。
 creator: <a href="http://wwxiong.com">@Outlier</a>
 
 url: "http://wwxiong.com"
@@ -10,7 +10,7 @@ url: "http://wwxiong.com"
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: plain
+highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color:

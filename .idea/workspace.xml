@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d23bf5c-3ceb-4d6b-9dcf-f46aaf750578" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vno-jekyll.iml" afterPath="$PROJECT_DIR$/.idea/vno-jekyll.iml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change beforePath="$PROJECT_DIR$/_includes/side-panel.html" afterPath="$PROJECT_DIR$/_includes/side-panel.html" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-08-19-ghost-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-09-25-algorithm-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-10-01-mysql-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-10-13-object-oriented-programming-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-10-21-git-command-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-10-29-regular-expression-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-11-05-linux-command-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-11-21-laravel-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-12-09-redis-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-12-27-ajax-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-01-23-design-patterns-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-02-08-http-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-02-20-javascript-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-03-15-javascript-2.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-03-20-javascript-3.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-04-05-cookie-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-04-15-session-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-04-21-phpunit-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-05-05-ubuntu-laravel.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-06-10-php-sql-injection.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-06-16-cross-site-scripting.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-06-28-sql-optimization-up.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_sass/_base.scss" afterPath="$PROJECT_DIR$/_sass/_base.scss" />
-      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
     </list>
     <ignored path="vno-jekyll.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="side-panel.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="side-panel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/side-panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="63" />
+            <state relative-caret-position="461">
+              <caret line="26" column="116" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -146,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+              <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -411,12 +384,12 @@
       <workItem from="1494409217821" duration="1390000" />
       <workItem from="1494466482819" duration="22000" />
       <workItem from="1505716157621" duration="1821000" />
-      <workItem from="1536823233600" duration="1628000" />
+      <workItem from="1536823233600" duration="2566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77762000" />
+    <option name="totallyTimeSpent" value="78700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1398" height="877" extended-state="6" />
@@ -745,18 +718,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_includes/side-panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="461">
+          <caret line="26" column="116" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/side-panel.html">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="63" />
+        <state relative-caret-position="84">
+          <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding />
         </state>
       </provider>
