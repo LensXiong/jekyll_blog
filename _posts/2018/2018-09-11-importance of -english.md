@@ -11,7 +11,7 @@ toc: true
 
 摘要：随着视野的开阔，你会接触到越来越多新的知识，那些有深度的论文和资料全都是英文，你会觉得英文能力，是一个人发展的必备技能。在某种情况下，它的重要性可以用“ 致命” 来形容。在编程职业生涯的发展，起到决定作用的，绝大多数时候都不是技术和业务，而是其他被人忽视的“ 软实力”，譬如沟通、性格、英语等等。实质上，英语的字母组成和特性决定了编程还真需要用英语。本篇文章并不是过度强调英语有多么重要，只是对于一个始终以发展的眼光看待未来的技术人员，多一份技能，多一份成功的垫脚石。毕竟，现实的真相是：你再牛，说不出来，又能如何？希望谨以此文，告诫自己在未来学习英语的道路上知行合一。
 
-![](http://wwxiong.comhttp://wwxiong.com/hexo_blog/img/article/importance-of-english/importance-of-english.jpg)
+![](http://wwxiong.com/hexo_blog/img/article/importance-of-english/importance-of-english.jpg)
 
 > 英语对编程人员来讲有多重要？会英语的编程人员和不会英语的编程人员有什么差距？
 
