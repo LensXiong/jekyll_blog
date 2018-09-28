@@ -22,9 +22,10 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Hexo, description: Hexo博客, url: 'http://wwxiong.com/hexo_blog/'}
-    - {title: About, description: 相关信息, url: 'http://wwxiong.com/hexo_blog/about/'}
-    - {title: Navbar, description: 我的导航, url: 'http://wwxiong.com/navigation/index.html'}
+    - {title: Hexo, description: Hexo博客, url: 'https://wwxiong.com/hexo_blog/'}
+    - {title: About, description: 相关信息, url: 'https://wwxiong.com/hexo_blog/about/'}
+    - {title: Navbar, description: 我的导航, url: 'https://wwxiong.com/navigation/index.html'}
+    - {title: Resume, description: 我的简历, url: 'https://wwxiong.com/resume/index.html'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
