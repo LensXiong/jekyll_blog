@@ -160,6 +160,7 @@ tmpfs tmpfs 497M 0 497M 0% /dev/shm
 |alias b612="ssh -v -l root 47.254.30.91"|SSH别名设置|
 
 ## ctrl快捷键
+
 |命令|说明|作用|
 |-| :- | :-: | -: |
 |ctrl + r|reverse-i-search|反向搜索执行过的命令|
