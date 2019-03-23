@@ -9,12 +9,8 @@ tags:
 toc: true
 ---
 
-**
 摘要：分析`SQL`执行带来的开销是优化`SQL`的重要手段。在`MySQL`数据库中，可以通过配置`profiling`参数来启用`SQL`剖析。该参数开启后，后续执行的`SQL`语句都将记录其资源开销，诸如`IO`，上下文切换，`CPU`，`Memory`等等。根据这些开销进一步分析当前`SQL`瓶颈从而进行优化与调整。本篇文章主要介绍了相关语法及参数说明、结合实例分析如何使用及剖析结论。
 ![show-profile-03](https://github.com/LensXiong/hexo_source_code/blob/master/img/technology/2019/mysql-show-profile/03.jpg?raw=true)
-**
-<!-- more -->
-<The rest of contents | 余下全文>
 
 # 概述
 

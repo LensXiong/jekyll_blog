@@ -9,13 +9,8 @@ tags:
 toc: true
 ---
 
-**
 摘要：慢查询日志是`MySQL`提供的一种日志记录，它是数据库调优的一个主要依据，通过分析慢查询日志我们可以对相关SQL语句变慢的原因进行进一步的分析。由于日志跟踪出来的文件是一个文本文件，查看起来费时费力，`MySQL`也提供了一个工具便于从文本文件里面查找的工具`mysqldumpslow`。本篇文章除了介绍慢查询日志的概念和具体参数，也重点介绍了`MySQL`分析日志工具`mysqldumpslow`。
 ![慢查询日志-03](https://github.com/LensXiong/hexo_source_code/blob/master/img/technology/2019/mysql-slow-query/03.jpg?raw=true)
-**
-<!-- more -->
-<The rest of contents | 余下全文>
-
 
 # 什么是慢查询日志
 

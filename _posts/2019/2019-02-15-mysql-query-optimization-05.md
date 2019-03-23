@@ -9,12 +9,8 @@ tags:
 toc: true
 ---
 
-**
 摘要：本篇文章主要介绍了如何使用存储过程批量插入大量数据，其中包括创建函数、创建存储过程、调用存储过程、删除存储过程。关于`MySQL`的存储过程，将在后期的学习中不断归纳和总结，具体细节暂时不做过多说明。这里只需关注是如何利用存储过程批量插入大量的数据即可。
 ![存储过程插入批量数据-01](https://github.com/LensXiong/hexo_source_code/blob/master/img/technology/2019/mysql-process-insert-data/01.jpg?raw=true)
-**
-<!-- more -->
-<The rest of contents | 余下全文>
 
 # 存储过程和函数
 
