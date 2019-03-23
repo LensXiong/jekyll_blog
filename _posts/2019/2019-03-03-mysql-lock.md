@@ -9,12 +9,8 @@ tags:
 toc: true
 ---
 
-**
 摘要：`MySQL`锁机制是数据库为了保证数据的一致性而使各种共享资源在被并发访问变得有序所设计的一种规则，对于任何一种数据库来说都需要有相应的锁定机制。`MySQL`为了解决并发、数据安全的问题，使用了锁机制。本篇文章主要介绍了锁的基本概念及锁的分类。从对数据操作的粒度，通过相关案例分析了行锁(`INNODB`引擎)、表锁(`MYISAM`引擎)和页级锁(`BDB`引擎 )，对于相关问题给出一些基本的优化方案。
 ![mysql-lock-02](https://github.com/LensXiong/hexo_source_code/blob/master/img/technology/2019/mysql-lock/02.jpg?raw=true)
-**
-<!-- more -->
-<The rest of contents | 余下全文>
 
 # 概述
 锁是计算机协调多个进程或线程并发访问某一资源的机制。
