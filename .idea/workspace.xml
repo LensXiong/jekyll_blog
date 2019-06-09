@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
-              <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+              <caret line="211" column="19" lean-forward="false" selection-start-line="211" selection-start-column="19" selection-end-line="211" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -167,10 +167,10 @@
       <find>\&lt;\!\-\- more \-\-\&gt;\n\&lt;The rest of contents \| 余下全文\&gt;</find>
       <find>\*\*\n</find>
       <find>**</find>
-      <find>**</find>
       <find>\n\*\*</find>
       <find>博客</find>
       <find>访问博客</find>
+      <find>nokogiri</find>
     </findStrings>
     <replaceStrings>
       <replace>```$_COOKIE```</replace>
@@ -425,12 +425,12 @@
       <workItem from="1505716157621" duration="1821000" />
       <workItem from="1536823233600" duration="5965000" />
       <workItem from="1538013426839" duration="415000" />
-      <workItem from="1560083497629" duration="471000" />
+      <workItem from="1560083497629" duration="520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82985000" />
+    <option name="totallyTimeSpent" value="83034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1400" height="877" extended-state="0" />
@@ -800,7 +800,7 @@
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
-          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+          <caret line="211" column="19" lean-forward="false" selection-start-line="211" selection-start-column="19" selection-end-line="211" selection-end-column="19" />
           <folding />
         </state>
       </provider>
