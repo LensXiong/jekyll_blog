@@ -2,10 +2,10 @@
 title: Wangxiong's Tech
 subtitle: 「Stay hungry. Stay foolish.」
 description: 嗨，我是王雄 (@Outlier)，一名职业PHP开发者，业余Go/Linux爱好者。现居北京，专注金融。我深信，所有的非常，都源于不懈的日常。
-welcome_message: 这里是我的<a href="/#blog" class="blog-button">Jekyll博客</a>，关于<a href="http://wwxiong.com/hexo_blog/">Hexo博客</a>，也欢迎<a href="http://wwxiong.com/hexo_blog/">前往了解</a>。
-creator: <a href="http://wwxiong.com">@Outlier</a>
+welcome_message: 这里是我的<a href="/#blog" class="blog-button">Jekyll博客</a>，关于<a href="https://wwxiong.com/hexo_blog/"> WordPress 博客</a>，也欢迎<a href="https://wwxiong.com">前往了解</a>。
+creator: <a href="https://hexo.wwxiong.com">@Outlier</a>
 
-url: "http://wwxiong.com"
+url: "https://hexo.wwxiong.com"
 
 permalink: /:year/:month/:title/
 
@@ -22,10 +22,10 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Hexo, description: Hexo博客, url: 'https://wwxiong.com/hexo_blog/'}
-    - {title: About, description: 相关信息, url: 'https://wwxiong.com/hexo_blog/about/'}
-    - {title: Navbar, description: 我的导航, url: 'https://wwxiong.com/navigation/index.html'}
-    #- {title: Resume, description: 我的简历, url: 'https://wwxiong.com/resume/index.html'}
+    - {title: Hexo, description: Hexo博客, url: 'https://hexo.wwxiong.com/hexo_blog/'}
+    - {title: About, description: 相关信息, url: 'https://hexo.wwxiong.com/hexo_blog/about/'}
+    - {title: Navbar, description: 我的导航, url: 'https://hexo.wwxiong.com/navigation/index.html'}
+    #- {title: Resume, description: 我的简历, url: 'https://hexo.wwxiong.com/resume/index.html'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
